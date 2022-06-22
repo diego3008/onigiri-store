@@ -18,6 +18,10 @@
           <%= link_to "Sign in", "/shop", class: "block py-2 pr-4 pl-3 text-white text-md rounded md:bg-transparent md:p-0"%>
         </li>
         <li>
+          <%= button_to "logout", destroy_user_session_path, method: :delete  %>
+
+        </li>
+        <li>
           <%= link_to "Sign up", "/shop", class: "block py-2 pr-4 pl-3 text-white text-md rounded md:bg-transparent  md:p-0"%>
         </li>
         <li>
