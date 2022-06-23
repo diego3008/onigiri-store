@@ -16,13 +16,15 @@
       <% if devise_mapping.rememberable? %>
         <div class="field">
           <%= f.check_box :remember_me %>
-          <%= f.label :remember_me %>
+          <%= f.label :remember_me, class: "text-white" %>
         </div>
       <% end %>
 
       <div class="actions">
-        <%= f.submit "Log in" %>
+        <%= f.submit "Iniciar sesión", class: "rounded-md bg-cyan-700 p-2 w-full text-white" %>
       </div>
+      
+
     <% end %>
 
     <%= render "users/shared/links" %>
